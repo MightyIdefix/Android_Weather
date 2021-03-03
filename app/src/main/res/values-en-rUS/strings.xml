@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Weather</string>
+    <string name="txtCityName">City Name</string>
+    <string name="txtTemperature">Temperature</string>
+    <string name="txtUserRating">User Rating</string>
+    <string name="btnExit">Exit</string>
+    <string name="txtHumidityDetails">Humidity</string>
+    <string name="txtWeatherDetails">Weather</string>
+    <string name="txtUserNotesDetails">User Notes</string>
+    <string name="btnBack">Back</string>
+    <string name="btnEdit">Edit</string>
+    <string name="txtMyRating">My Rating</string>
+    <string name="txtMyNotes">My Notes</string>
+    <string name="btnCancel">Cancel</string>
+    <string name="btnOK">OK</string>
+    <string name="bntCancel">Cancel</string>
+</resources>

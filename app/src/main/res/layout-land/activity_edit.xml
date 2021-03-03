@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_light"
+    tools:context=".EditActivity">
+
+    <ImageView
+        android:id="@+id/imgCountryEdit"
+        android:layout_width="102dp"
+        android:layout_height="81dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/dk" />
+
+    <TextView
+        android:id="@+id/txtCityNameEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="24dp"
+        android:text="@string/txtCityName"
+        app:layout_constraintStart_toEndOf="@+id/imgCountryEdit"
+        app:layout_constraintTop_toTopOf="@+id/imgCountryEdit" />
+
+    <TextView
+        android:id="@+id/txtMyRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="@string/txtMyRating"
+        app:layout_constraintStart_toStartOf="@+id/imgCountryEdit"
+        app:layout_constraintTop_toBottomOf="@+id/imgCountryEdit" />
+
+    <TextView
+        android:id="@+id/txtMyRatingValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/txtMyRating"
+        app:layout_constraintTop_toTopOf="@+id/txtMyRating" />
+
+    <SeekBar
+        android:id="@+id/seekBarEdit"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:layout_constraintEnd_toEndOf="@+id/txtMyRatingValue"
+        app:layout_constraintStart_toStartOf="@+id/txtMyRating"
+        app:layout_constraintTop_toBottomOf="@+id/txtMyRatingValue" />
+
+    <TextView
+        android:id="@+id/txtMyNotes"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="200dp"
+        android:layout_marginLeft="200dp"
+        android:text="@string/txtMyNotes"
+        app:layout_constraintStart_toEndOf="@+id/txtMyRatingValue"
+        app:layout_constraintTop_toTopOf="@+id/txtMyRatingValue" />
+
+    <EditText
+        android:id="@+id/myNotesEdit"
+        android:layout_width="321dp"
+        android:layout_height="124dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Write your notes"
+        android:inputType="textPersonName"
+        app:layout_constraintStart_toStartOf="@+id/txtMyNotes"
+        app:layout_constraintTop_toBottomOf="@+id/txtMyNotes" />
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginBottom="32dp"
+        android:text="@string/bntCancel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnOK"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:layout_marginBottom="32dp"
+        android:text="@string/btnOK"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

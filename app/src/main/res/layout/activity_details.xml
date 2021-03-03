@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/holo_blue_light"
+    tools:context=".DetailsActivity">
+
+    <ImageView
+        android:id="@+id/imgCountryDetails"
+        android:layout_width="113dp"
+        android:layout_height="100dp"
+        android:layout_marginTop="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/dk" />
+
+    <TextView
+        android:id="@+id/txtCityNameDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/txtCityName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imgCountryDetails" />
+
+    <TextView
+        android:id="@+id/txtTempDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginTop="200dp"
+        android:text="@string/txtTemperature"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/txtTempDetailsValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:text="TextView"
+        app:layout_constraintStart_toEndOf="@+id/txtTempDetails"
+        app:layout_constraintTop_toTopOf="@+id/txtTempDetails" />
+
+    <TextView
+        android:id="@+id/txtHumidityDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/txtHumidityDetails"
+        app:layout_constraintStart_toStartOf="@+id/txtTempDetails"
+        app:layout_constraintTop_toBottomOf="@+id/txtTempDetails" />
+
+    <TextView
+        android:id="@+id/txtHumidityDetailsValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/txtTempDetailsValue"
+        app:layout_constraintTop_toTopOf="@+id/txtHumidityDetails" />
+
+    <TextView
+        android:id="@+id/txtWeatherDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/txtWeatherDetails"
+        app:layout_constraintStart_toStartOf="@+id/txtHumidityDetails"
+        app:layout_constraintTop_toBottomOf="@+id/txtHumidityDetails" />
+
+    <TextView
+        android:id="@+id/txtWeatherDetailsValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/txtHumidityDetailsValue"
+        app:layout_constraintTop_toTopOf="@+id/txtWeatherDetails" />
+
+    <TextView
+        android:id="@+id/txtUserRatingDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:text="@string/txtUserRating"
+        app:layout_constraintStart_toStartOf="@+id/txtWeatherDetails"
+        app:layout_constraintTop_toBottomOf="@+id/txtWeatherDetails" />
+
+    <TextView
+        android:id="@+id/txtUserRatingDetailsValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/txtWeatherDetailsValue"
+        app:layout_constraintTop_toTopOf="@+id/txtUserRatingDetails" />
+
+    <TextView
+        android:id="@+id/txtUserNotesDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:text="@string/txtUserNotesDetails"
+        app:layout_constraintStart_toStartOf="@+id/txtUserRatingDetails"
+        app:layout_constraintTop_toBottomOf="@+id/txtUserRatingDetails" />
+
+    <TextView
+        android:id="@+id/txtUserNotesDetailsValue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        app:layout_constraintStart_toStartOf="@+id/txtUserNotesDetails"
+        app:layout_constraintTop_toBottomOf="@+id/txtUserNotesDetails" />
+
+    <Button
+        android:id="@+id/btnBack"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginLeft="24dp"
+        android:layout_marginBottom="24dp"
+        android:text="@string/btnBack"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/btnEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="24dp"
+        android:layout_marginRight="24dp"
+        android:layout_marginBottom="24dp"
+        android:text="@string/btnEdit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

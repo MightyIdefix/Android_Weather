@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Weather</string>
+    <string name="txtCityName">By Navn</string>
+    <string name="txtTemperature">Temperatur</string>
+    <string name="txtUserRating">Bruger Vudering</string>
+    <string name="btnExit">Exit</string>
+    <string name="txtHumidityDetails">Fugtighed</string>
+    <string name="txtWeatherDetails">Vejr</string>
+    <string name="txtUserNotesDetails">Bruger Noter</string>
+    <string name="btnBack">Tilbage</string>
+    <string name="btnEdit">Rediger</string>
+    <string name="txtMyRating">Min Vudering</string>
+    <string name="txtMyNotes">Mine Noter</string>
+    <string name="btnCancel">Annuler</string>
+    <string name="btnOK">OK</string>
+    <string name="bntCancel">Annuler</string>
+</resources>
